@@ -1,29 +1,25 @@
-# GroupDocs.Conversion Cloud API .NET Examples
+## GroupDocs.Conversion Cloud SDK for .NET
 
-This package contains C# Example Project for [GroupDocs.Conversion Cloud API .NET](https://products.groupdocs.cloud/conversion/net).
+[GroupDocs.Conversion Cloud SDK for .NET](https://products.groupdocs.cloud/conversion/net) has been developed to help you get started with using our document conversion REST API, allowing to seamlessly convert your documents to any format you need. With this single API, you can convert back and forth between over 50 types of documents and images, including all Microsoft Office and OpenDocument file formats, PDF documents, HTML, CAD, raster images and many more.
+
+This repository contains [Examples](Examples) projects for [GroupDocs.Conversion Cloud SDK for .NET](https://products.groupdocs.cloud/conversion/net) to help you learn and write your own applications.
 
 <p align="center">
-  <a title="Download complete GroupDocs.Conversion Cloud API .NET Example source code" href="https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-dotnet-samples/archive/master.zip">
+
+  <a title="Download complete GroupDocs.Conversion Cloud SDK Examples for .NET source code" href="https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-dotnet-samples/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
 
-# Prerequisite
+Directory | Description
+--------- | -----------
+[Examples](Examples)  | A collection of .NET Cloud SDK examples that help you learn the product features
 
-+ Visual Studio 2012 or Higher.
+## Resources
 
-+ GroupDocs.Conversion Cloud SDK.
-
-+ Get your AppSID and AppKey at [https://dashboard.groupdocs.cloud](https://dashboard.groupdocs.cloud) (free registration is required).
-
-# How to Run the Examples?
-
-The package contains C# examples. Follow the given steps to proceed with project build:
-
-* Extract the downloaded project and open the solution file in Visual Studio
-* Right click on solution and press "Enable NuGet package Restore"
-* Build the project.
-
-In other case, it is possible that Visual Studio is unable to automatically add APIs references due to Visual Studio version differences. In this case, please add references of missing APIs manually.
-
-For more details, visit  [Getting Started](https://docs.groupdocs.cloud/display/conversioncloud/Getting+Started).
++ **Website:** [www.GroupDocs.cloud](http://www.GroupDocs.cloud)
++ **Product Home:** [GroupDocs.Conversion Cloud SDK for .NET](https://products.groupdocs.cloud/conversion/net)
++ **Download:** [Download GroupDocs.Conversion Cloud SDK for .NET](https://www.nuget.org/packages/GroupDocs.Conversion-Cloud/)
++ **Documentation:** [GroupDocs.Conversion Cloud SDK Documentation](https://docs.groupdocs.cloud/display/conversioncloud/Home)
++ **Free Support:** [GroupDocs.Conversion Cloud SDK Free Support Forum](https://forum.groupdocs.cloud/c/conversion)
++ **Blog:** [GroupDocs.Conversion Cloud SDK Blog](https://blog.groupdocs.cloud/category/conversion/)
