@@ -1,11 +1,7 @@
-﻿using GroupDocs.Conversion.Cloud.Sdk.Api;
+﻿using System.IO;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+using GroupDocs.Conversion.Cloud.Sdk.Client;
+using GroupDocs.Conversion.Cloud.Sdk.Api;
 
 namespace GroupDocs.Conversion.Cloud.Examples.CSharp
 {
@@ -13,26 +9,29 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
     {
         public static string MyAppSid = Common.MyAppSid;
         public static string MyAppKey = Common.MyAppKey;
+        public static string MyStorage = Common.MyStorage;
 
         public static void UploadSampleTestFiles()
         {
-            var storageConfig = new Configuration
-            {
-                AppSid = MyAppSid,
-                AppKey = MyAppKey,
-            };
+            var storageConfig = new Configuration(MyAppSid, MyAppKey);
 
             StorageApi storageApi = new StorageApi(storageConfig);
+            FolderApi folderApi = new FolderApi(storageConfig);
+            FileApi fileApi = new FileApi(storageConfig);
+
             var path = "..\\..\\..\\Data";
+
+            Console.WriteLine("File Upload Processing...");
 
             var dirs = Directory.GetDirectories(path, "*", SearchOption.AllDirectories);
             foreach (var dir in dirs)
             {
                 var relativeDirPath = dir.Replace(path, string.Empty).Trim(Path.DirectorySeparatorChar);
-
-                var response = storageApi.IsExist(relativeDirPath);
-                if (!response.FileExist.IsExist)
-                    storageApi.CreateFolder(relativeDirPath);
+                var response = storageApi.ObjectExists(new Sdk.Model.Requests.ObjectExistsRequest(relativeDirPath, MyStorage));
+                if (!response.Exists.Value)
+                {
+                    folderApi.CreateFolder(new Sdk.Model.Requests.CreateFolderRequest(relativeDirPath, MyStorage));
+                }
             }
 
             var files = Directory.GetFiles(path, "*", SearchOption.AllDirectories);
@@ -40,16 +39,19 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
             {
                 var relativeFilePath = file.Replace(path, string.Empty).Trim(Path.DirectorySeparatorChar);
 
-                var response = storageApi.IsExist(relativeFilePath);
-                if (!response.FileExist.IsExist)
+                var response = storageApi.ObjectExists(new Sdk.Model.Requests.ObjectExistsRequest(relativeFilePath, MyStorage));
+                if (!response.Exists.Value)
                 {
                     var fileName = Path.GetFileName(file);
                     var relativeDirPath = relativeFilePath.Replace(fileName, string.Empty).Trim(Path.DirectorySeparatorChar);
-                    var bytes = File.ReadAllBytes(file);
+                    var fileStream = File.Open(file, FileMode.Open);
 
-                    storageApi.CreateFile(fileName, relativeDirPath, bytes);
+                    fileApi.UploadFile(new Sdk.Model.Requests.UploadFileRequest(relativeFilePath, fileStream, MyStorage));
+                    fileStream.Close();
                 }
             }
+
+            Console.WriteLine("File Upload Process Completed.");
         }
     }
 }
