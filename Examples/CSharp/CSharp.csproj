@@ -38,9 +38,8 @@
     <StartupObject>GroupDocs.Conversion.Cloud.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GroupDocs.Conversion.Cloud.Sdk, Version=19.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\GroupDocs.Conversion-Cloud.19.3.0\lib\net20\GroupDocs.Conversion.Cloud.Sdk.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="GroupDocs.Conversion.Cloud.Sdk, Version=19.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\GroupDocs.Conversion-Cloud.19.4.0\lib\net20\GroupDocs.Conversion.Cloud.Sdk.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
@@ -61,29 +60,37 @@
     <Compile Include="RunExamples.cs" />
     <Compile Include="Supported_File_Formats\Conversion_CSharp_Get_Supported_Formats.cs" />
     <Compile Include="Supported_File_Formats\Conversion_CSharp_Get_Supported_Formats_For_Extension.cs" />
+    <Compile Include="Supported_File_Formats\Conversion_CSharp_Get_Supported_Formats_For_Document.cs" />
     <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Any_Format.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Supported_File_Formats\Conversion_CSharp_Get_Supported_Formats_For_Document.cs" />
+    <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Any_Format_Stream.cs" />
     <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Cells.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Cells_Stream.cs" />
     <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Html.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Html_Stream.cs" />
     <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Images.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Images_Stream.cs" />
     <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Pdf.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Pdf_Stream.cs" />
     <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Slides.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Slides_Stream.cs" />
+    <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Text.cs" />
+    <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Text_Stream.cs" />
     <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Words.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Text.cs" />
+    <Compile Include="Working_With_Conversions\Conversion_CSharp_Convert_To_Words_Stream.cs" />
     <Compile Include="Working_With_Files\Conversion_CSharp_Copy_File.cs" />
     <Compile Include="Working_With_Files\Conversion_CSharp_Delete_File.cs" />
     <Compile Include="Working_With_Files\Conversion_CSharp_Download_File.cs" />

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using GroupDocs.Conversion.Cloud.Sdk.Api;
 using GroupDocs.Conversion.Cloud.Sdk.Client;
 using GroupDocs.Conversion.Cloud.Sdk.Model;
@@ -7,9 +8,9 @@ using GroupDocs.Conversion.Cloud.Sdk.Model.Requests;
 
 namespace GroupDocs.Conversion.Cloud.Examples.CSharp
 {
-    // Convert to Html
-    class Convert_To_Html
-    {
+	// Convert to Html with output as iostream
+	class Convert_To_Html_Stream
+	{
         public static void Run()
         {
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
@@ -26,12 +27,12 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
                     Format = "html",
                     LoadOptions = new DocxLoadOptions() { Password = "password" },
                     ConvertOptions = new HtmlConvertOptions() { FixedLayout = true, UsePdf = true },
-                    OutputPath = "converted/tohtml"
-                };
+					OutputPath = null // set OutputPath as null will result the output as document IOStream
+				};
 
 				// convert to specified format
-				List<StoredConvertedResult> response = apiInstance.ConvertDocument(new ConvertDocumentRequest(settings));
-				Console.WriteLine("Document conveted successfully: " + response[0].Url);
+				Stream response = apiInstance.ConvertDocumentDownload(new ConvertDocumentRequest(settings));
+				Console.WriteLine("Document conveted successfully: " + response.Length.ToString());
 			}
 			catch (Exception e)
             {
