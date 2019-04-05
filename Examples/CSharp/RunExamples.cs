@@ -7,120 +7,144 @@ using GroupDocs.Conversion.Cloud.Sdk.Model;
 
 namespace GroupDocs.Conversion.Cloud.Examples.CSharp
 {
-    class RunExamples
-    {
-        static void Main(string[] args)
-        {
-            //// ***********************************************************
-            ////          GroupDocs.Conversion Cloud API Examples
-            //// ***********************************************************
+	class RunExamples
+	{
+		static void Main(string[] args)
+		{
+			//// ***********************************************************
+			////          GroupDocs.Conversion Cloud API Examples
+			//// ***********************************************************
 
-            //TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
-            Common.MyAppSid = "XXXXX-XXXXX-XXXXX";
-            Common.MyAppKey = "XXXXXXX";
-            Common.MyStorage = "XXXXX";
+			//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
+			Common.MyAppSid = "XXX-XXXX";
+			Common.MyAppKey = "XXXX";
+			Common.MyStorage = "XXXX";
 
-            // Uploading sample test files from local to storage under folder 'conversions'
-            //Common.UploadSampleTestFiles();
+			// Uploading sample test files from local to storage under folder 'conversions'
+			//Common.UploadSampleTestFiles();
 
-            //// ***********************************************************
-            ///// ***** WORKING WITH STORAGE *****
-            //// ***********************************************************
+			//// ***********************************************************
+			///// ***** WORKING WITH STORAGE *****
+			//// ***********************************************************
 
-            // Is Storage Exist
-            //Storage_Exist.Run();
+			// Is Storage Exist
+			//Storage_Exist.Run();
 
-            // Get Get Disc Usage
-            //Get_Disc_Usage.Run();
+			// Get Get Disc Usage
+			//Get_Disc_Usage.Run();
 
-            // Get File Versions
-            //Get_File_Versions.Run();
+			// Get File Versions
+			//Get_File_Versions.Run();
 
-            // Is Object Exists
-            //Object_Exists.Run();
-
-
-            //// ***********************************************************
-            //// ***** WORKING WITH FOLDER *****
-            //// ***********************************************************
-
-            // Create Folder
-            //Create_Folder.Run();
-
-            // Copy Folder
-            //Copy_Folder.Run();
-
-            // Move Folder
-            //Move_Folder.Run();
-
-            // Delete Folder
-            //Delete_Folder.Run();
-
-            // Get Files List
-            //Get_Files_List.Run("converted");
+			// Is Object Exists
+			//Object_Exists.Run();
 
 
-            //// ***********************************************************
-            //// ***** WORKING WITH FILES *****
-            //// ***********************************************************
+			//// ***********************************************************
+			//// ***** WORKING WITH FOLDER *****
+			//// ***********************************************************
 
-            // Upload File
-            //Upload_File.Run();
+			// Create Folder
+			//Create_Folder.Run();
 
-            // Copy File
-            //Copy_File.Run();
+			// Copy Folder
+			//Copy_Folder.Run();
 
-            // Move File
-            //Move_File.Run();
+			// Move Folder
+			//Move_Folder.Run();
 
-            // Delete File
-            //Delete_File.Run();
+			// Delete Folder
+			//Delete_Folder.Run();
 
-            // Download_File
-            //Download_File.Run();
-
-
-            //// ***********************************************************
-            //// ***** WORKING WITH SUPPORTED FORMATS *****
-            //// ***********************************************************
-
-            // Get All Supported Formats
-            Get_All_Supported_Formats.Run();
-
-            // Get All Supported Formats For Provided Document
-            //Get_All_Possible_Conversions_For_Document.Run();
-
-            // Get All Supported Formats For Provided Extension
-            //Get_All_Possible_Conversions_For_Extension.Run();
+			// Get Files List
+			//Get_Files_List.Run("converted");
 
 
-            //// ***********************************************************
-            //// ***** WORKING WITH CONVERSIONS *****
-            //// ***********************************************************
+			//// ***********************************************************
+			//// ***** WORKING WITH FILES *****
+			//// ***********************************************************
 
-            // Quick Convert to Any Desired Output Format
-            //Convert_To_Any_Format.Run("jpg", new JpgConvertOptions());
+			// Upload File
+			//Upload_File.Run();
 
-            // Convert to Cells with load and save options
-            //Convert_To_Cells.Run();
+			// Copy File
+			//Copy_File.Run();
 
-            // Convert to Html with load and save options
-            //Convert_To_Html.Run();
+			// Move File
+			//Move_File.Run();
 
-            // Convert to image/s with load and save options
-            //Convert_To_Images.Run();
+			// Delete File
+			//Delete_File.Run();
 
-            // Convert to PDF with load and save options
-            //Convert_To_Pdf.Run();
+			// Download_File
+			//Download_File.Run();
 
-            // Convert to Slides with load and save options
-            //Convert_To_Slides.Run();
 
-            // Convert to Words with load and save options
-            //Convert_To_Words.Run();
+			//// ***********************************************************
+			//// ***** WORKING WITH SUPPORTED FORMATS *****
+			//// ***********************************************************
 
-            // Convert to Text with load and save options
-            //Convert_To_Text.Run();
-        }
-    }
+			// Get All Supported Formats
+			Get_All_Supported_Formats.Run();
+
+			// Get All Supported Formats For Provided Document
+			//Get_All_Possible_Conversions_For_Document.Run();
+
+			// Get All Supported Formats For Provided Extension
+			//Get_All_Possible_Conversions_For_Extension.Run();
+
+
+			//// ***********************************************************
+			//// ***** WORKING WITH CONVERSIONS *****
+			//// ***********************************************************
+
+			// Quick Convert to Any Desired Output Format
+			Convert_To_Any_Format.Run("jpg", new JpgConvertOptions());
+
+			// Quick Convert to Any Desired Output Format with output as iostream
+			Convert_To_Any_Format_Stream.Run("jpg", new JpgConvertOptions());
+
+			// Convert to Cells with load and save options
+			//Convert_To_Cells.Run();
+
+			// Convert to Cells with load and save options with output as iostream
+			//Convert_To_Cells_Stream.Run();
+
+			// Convert to Html with load and save options
+			//Convert_To_Html.Run();
+
+			// Convert to Html with load and save options with output as iostream
+			//Convert_To_Html_Stream.Run();
+
+			// Convert to image/s with load and save options
+			//Convert_To_Images.Run();
+
+			// Convert to Images with load and save options with output as iostream
+			//Convert_To_Images_Stream.Run();
+
+			// Convert to PDF with load and save options
+			//Convert_To_Pdf.Run();
+
+			// Convert to PDF with load and save options with output as iostream
+			//Convert_To_Pdf_Stream.Run();
+
+			// Convert to Slides with load and save options
+			//Convert_To_Slides.Run();
+
+			// Convert to Slides with load and save options with output as iostream
+			//Convert_To_Slides_Stream.Run();
+
+			// Convert to Words with load and save options
+			//Convert_To_Words.Run();
+
+			// Convert to Words with load and save options with output as iostream
+			//Convert_To_Words_Stream.Run();
+
+			// Convert to Text with load and save options
+			//Convert_To_Text.Run();
+
+			// Convert to Text with load and save options with output as iostream
+			//Convert_To_Text_Stream.Run();
+		}
+	}
 }

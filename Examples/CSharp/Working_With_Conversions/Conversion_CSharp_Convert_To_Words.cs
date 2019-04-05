@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using GroupDocs.Conversion.Cloud.Sdk.Api;
 using GroupDocs.Conversion.Cloud.Sdk.Client;
 using GroupDocs.Conversion.Cloud.Sdk.Model;
@@ -20,7 +21,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
                 // convert settings
                 var settings = new ConvertSettings
                 {
-                    Storage = Common.MyStorage,
+                    StorageName = Common.MyStorage,
                     FilePath = "conversions/sample.pdf",
                     Format = "docx",
                     LoadOptions = new PdfLoadOptions() { Password = "", HidePdfAnnotations = true, RemoveEmbeddedFiles = false, FlattenAllFields = true },
@@ -28,12 +29,11 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
                     OutputPath = "converted/towords"
                 };
 
-                // convert to specified format
-                apiInstance.ConvertDocument(new ConvertDocumentRequest(settings));
-                Console.WriteLine("Document conveted successfully.");
-                Get_Files_List.Run("converted/towords");
-            }
-            catch (Exception e)
+				// convert to specified format
+				List<StoredConvertedResult> response = apiInstance.ConvertDocument(new ConvertDocumentRequest(settings));
+				Console.WriteLine("Document conveted successfully: " + response[0].Url);
+			}
+			catch (Exception e)
             {
                 Console.WriteLine("Exception when calling ConversionApi: " + e.Message);
             }
