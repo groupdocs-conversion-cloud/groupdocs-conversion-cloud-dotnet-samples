@@ -16,9 +16,9 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
 			//// ***********************************************************
 
 			//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
-			Common.MyAppSid = "XXX-XXXX";
-			Common.MyAppKey = "XXXX";
-			Common.MyStorage = "XXXX";
+			Common.MyAppSid = "XXXXX-XXXXX-XXXXX-XXXXX-XXXXX";
+			Common.MyAppKey = "XXXXXXXXXXXXXXX";
+			Common.MyStorage = "XXXXX";
 
 			// Uploading sample test files from local to storage under folder 'conversions'
 			//Common.UploadSampleTestFiles();
@@ -92,6 +92,14 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
 
 			// Get All Supported Formats For Provided Extension
 			//Get_All_Possible_Conversions_For_Extension.Run();
+
+
+			//// ***********************************************************
+			//// ***** WORKING WITH DOCUMENT INFORMATION *****
+			//// ***********************************************************
+
+			// Get Document Information / Docuement Metada
+			//Get_Document_Information.Run();
 
 
 			//// ***********************************************************
