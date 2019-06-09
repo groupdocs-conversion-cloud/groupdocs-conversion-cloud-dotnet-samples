@@ -12,7 +12,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
         {
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
 
-            var apiInstance = new ConversionApi(configuration);
+            var apiInstance = new InfoApi(configuration);
 
             try
             {
@@ -29,7 +29,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling ConversionApi: " + e.Message);
+                Console.WriteLine("Exception while calling InfoApi: " + e.Message);
             }
         }
     }

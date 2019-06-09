@@ -15,7 +15,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
 		{
 			var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
 
-			var apiInstance = new ConversionApi(configuration);
+			var apiInstance = new ConvertApi(configuration);
 
 			try
 			{
@@ -58,7 +58,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
 			}
 			catch (Exception e)
 			{
-				Console.WriteLine("Exception when calling ConversionApi: " + e.Message);
+				Console.WriteLine("Exception when calling ConvertApi: " + e.Message);
 			}
 		}
 	}
