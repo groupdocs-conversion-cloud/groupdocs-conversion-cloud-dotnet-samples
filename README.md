@@ -12,7 +12,7 @@ This repository contains [Examples](Examples) projects for [GroupDocs.Conversion
 </p>
 
 ## How to use the SDK?
-The complete source code is available in this repository folder. You can either directly use it in your project via source code or get [NuGet distribution](https://www.nuget.org/packages/GroupDocs.Conversion-Cloud/) (recommended). For more details, please visit our [documentation website](https://docs.groupdocs.cloud/display/signaturecloud/Available+SDKs).
+The complete source code is available in this repository folder. You can either directly use it in your project via source code or get [NuGet distribution](https://www.nuget.org/packages/GroupDocs.Conversion-Cloud/) (recommended). For more details, please visit our [documentation website](https://docs.groupdocs.cloud/display/conversioncloud/Available+SDKs).
 
 ### Prerequisites
 
