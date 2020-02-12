@@ -1,52 +1,45 @@
-## GroupDocs.Conversion Cloud SDK for .NET
+## GroupDocs.Conversion Cloud SDK for .NET Examples
+This repository contains [Examples](Examples) projects for [GroupDocs.Conversion Cloud SDK for .NET](https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-dotnet) to help you learn and write your own applications.
+
 
 [GroupDocs.Conversion Cloud SDK for .NET](https://products.groupdocs.cloud/conversion/net) has been developed to help you get started with using our document conversion REST API, allowing to seamlessly convert your documents to any format you need. With this single API, you can convert back and forth between over 50 types of documents and images, including all Microsoft Office and OpenDocument file formats, PDF documents, HTML, CAD, raster images and many more.
-
-This repository contains [Examples](Examples) projects for [GroupDocs.Conversion Cloud SDK for .NET](https://products.groupdocs.cloud/conversion/net) to help you learn and write your own applications.
+[GroupDocs.Conversion Cloud API](https://products.groupdocs.cloud/conversion). GroupDocs.Conversion Cloud SDK for .NET has been developed to help you integrate all these features in your .NET application without any hassle.
 
 <p align="center">
-
-  <a title="Download complete GroupDocs.Conversion Cloud SDK Examples for .NET source code" href="https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-dotnet-samples/archive/master.zip">
+  <a title="Download complete GroupDocs.Conversion Cloud SDK .NET Example source code" href="https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-dotnet-samples/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
 
-## How to use the SDK?
-The complete source code is available in this repository folder. You can either directly use it in your project via source code or get [NuGet distribution](https://www.nuget.org/packages/GroupDocs.Conversion-Cloud/) (recommended). For more details, please visit our [documentation website](https://docs.groupdocs.cloud/display/conversioncloud/Available+SDKs).
+## Prerequisites
 
-### Prerequisites
++ Visual Studio 2017 or Higher.
 
-To use GroupDocs.Conversion Cloud .NET SDK you need to register an account with [GroupDocs Cloud](https://groupdocs.cloud) and lookup/create App Key and SID at [Cloud Dashboard](https://dashboard.groupdocs.cloud/#/apps). There is free quota available. For more details, see [GroupDocs Cloud Pricing](https://purchase.groupdocs.cloud/pricing).
++ GroupDocs.Conversion Cloud SDK for .NET.
 
-### Installation
++ Get your AppSID and AppKey at [https://dashboard.groupdocs.cloud](https://dashboard.groupdocs.cloud) (free registration is required).
 
-#### Install GroupDocs.Conversion Cloud via NuGet
+## How to Run the Examples?
 
-From the command line:
+The package contains C# examples. Follow the given steps to proceed with project build:
 
-	nuget install GroupDocs.Conversion Cloud
+* Extract the downloaded project and open the solution file in Visual Studio
+* Right click on solution and press "Enable NuGet package Restore"
+* Build the project.
 
-From Package Manager:
+In other case, it is possible that Visual Studio is unable to automatically add APIs references due to Visual Studio version differences. In this case, please add references of missing APIs manually.
 
-	PM> Install-Package GroupDocs.Conversion Cloud
+For more details, visit  [Getting Started](https://docs.groupdocs.cloud/display/conversioncloud/Getting+Started).
 
-From within Visual Studio:
-
-1. Open the Solution Explorer.
-2. Right-click on a project within your solution.
-3. Click on *Manage NuGet Packages...*
-4. Click on the *Browse* tab and search for "GroupDocs.Conversion Cloud".
-5. Click on the GroupDocs.Conversion Cloud package, select the appropriate version in the right-tab and click *Install*.
-
-## Dependencies
-- .NET Framework 2.0 or later
-- [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/)
+## Licensing
+All GroupDocs.Conversion Cloud SDKs are licensed under [MIT License](LICENSE).
 
 ## Resources
++ [**Website**](https://www.groupdocs.cloud)
++ [**Product Home**](https://products.groupdocs.cloud/conversion)
++ [**Documentation**](https://docs.groupdocs.cloud/display/conversioncloud/Home)
++ [**Free Support Forum**](https://forum.groupdocs.cloud/c/conversion)
++ [**Blog**](https://blog.groupdocs.cloud/category/conversion)
 
-+ **Website:** [www.GroupDocs.cloud](http://www.GroupDocs.cloud)
-+ **Product Home:** [GroupDocs.Conversion Cloud SDK for .NET](https://products.groupdocs.cloud/conversion/net)
-+ **Download:** [Download GroupDocs.Conversion Cloud SDK for .NET](https://www.nuget.org/packages/GroupDocs.Conversion-Cloud/)
-+ **Documentation:** [GroupDocs.Conversion Cloud SDK Documentation](https://docs.groupdocs.cloud/display/conversioncloud/Home)
-+ **Free Support:** [GroupDocs.Conversion Cloud SDK Free Support Forum](https://forum.groupdocs.cloud/c/conversion)
-+ **Blog:** [GroupDocs.Conversion Cloud SDK Blog](https://blog.groupdocs.cloud/category/conversion/)
+## Contact Us
+Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://forum.groupdocs.cloud/c/conversion).

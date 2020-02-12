@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "CSharp\CSharp.csproj", "{5057BAC4-1FAC-4107-8B71-0064D60A8431}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupDocs.Conversion.Cloud.Examples.CSharp", "GroupDocs.Conversion.Cloud.Examples.CSharp\GroupDocs.Conversion.Cloud.Examples.CSharp.csproj", "{5057BAC4-1FAC-4107-8B71-0064D60A8431}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
