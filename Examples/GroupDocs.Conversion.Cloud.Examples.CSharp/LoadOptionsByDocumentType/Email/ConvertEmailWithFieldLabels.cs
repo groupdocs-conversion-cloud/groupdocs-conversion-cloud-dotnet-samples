@@ -1,14 +1,16 @@
 using System;
+using System.Collections.Generic;
 using GroupDocs.Conversion.Cloud.Sdk.Api;
 using GroupDocs.Conversion.Cloud.Sdk.Model;
 using GroupDocs.Conversion.Cloud.Sdk.Model.Requests;
 
-namespace GroupDocs.Conversion.Cloud.Examples.CSharp.Convert
+namespace GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.Email
 {
     /// <summary>
-    /// This example demonstrates how to convert word processing document into html document
+    /// This example demonstrates how to convert msg document into pdf document
+    /// and replace field labels to custom values
     /// </summary>
-    public class ConvertToHtml
+    public class ConvertEmailWithFieldLabels
     {
         public static void Run()
         {
@@ -21,21 +23,21 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.Convert
                 var settings = new ConvertSettings
                 {
                     StorageName = Constants.MyStorage,
-                    FilePath = "WordProcessing/four-pages.docx",
-                    Format = "html",
-                    ConvertOptions = new HtmlConvertOptions
+                    FilePath = "Email/sample.msg",
+                    Format = "pdf",
+                    LoadOptions = new EmailLoadOptions
                     {
-                        FromPage = 1,
-                        PagesCount = 1,
-                        FixedLayout = true,
-                        FixedLayoutShowBorders = true
+                        FieldLabels = new List<FieldLabel>
+                        {
+                            new FieldLabel { Field = FieldLabel.FieldEnum.From, Label = "Sender" },
+                            new FieldLabel { Field = FieldLabel.FieldEnum.To, Label = "Receiver" }
+                        }
                     },
                     OutputPath = "converted"
                 };
 
                 // Convert to specified format
                 var response = apiInstance.ConvertDocument(new ConvertDocumentRequest(settings));
-                
                 Console.WriteLine("Document converted successfully: " + response[0].Url);
             }
             catch (Exception e)

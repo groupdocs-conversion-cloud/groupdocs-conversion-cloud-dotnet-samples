@@ -5,6 +5,7 @@ using GroupDocs.Conversion.Cloud.Examples.CSharp.Info;
 using GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.Cad;
 using GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.Csv;
 using GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.Email;
+using GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.Html;
 using GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.Note;
 using GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.Pdf;
 using GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.Presentation;
@@ -23,20 +24,20 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
             //// ***********************************************************
 
             //TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
-            Constants.MyAppSid = "XXXXX-XXXXX-XXXXX";
-            Constants.MyAppKey = "XXXXXXXXXX";
+            Constants.MyAppSid = "XXXXXXXXXXXXXXXX";
+            Constants.MyAppKey = "XXXXXXXXXXXXXXXX";
             Constants.MyStorage = "First Storage";
 
             // Uploading sample test files from local disk to cloud storage
             Constants.UploadSampleTestFiles();
 
-
+            
             #region Info API Examples
             GetSupportedConversions.Run();
 
             GetDocumentInformation.Run();
             #endregion
-
+            
             #region Document conversion examples with conversion options
             ConvertToPdf.Run();
 
@@ -75,6 +76,12 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
             ConvertEmailWithAttachments.Run();
 
             ConvertEmailWithTimezoneOffset.Run();
+
+            ConvertEmailWithFieldLabels.Run();
+
+            ConvertEmailWithOriginalDate.Run();
+
+            ConvertHtmlWithPageNumbering.Run();
 
             ConvertNoteBySpecifyingFontSubstitution.Run();
 
@@ -115,7 +122,6 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
             ConvertWordProcessingBySpecifyingFontSubstitution.Run();
 
             #endregion
-
 
             Console.WriteLine("Completed!");
             Console.ReadKey();
