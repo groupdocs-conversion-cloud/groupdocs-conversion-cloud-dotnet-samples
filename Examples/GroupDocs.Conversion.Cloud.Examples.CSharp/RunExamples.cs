@@ -52,6 +52,8 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
             ConvertToPresentation.Run();
 
             ConvertToSpreadsheet.Run();
+
+            ConvertToPdfDirect.Run();
             #endregion
 
             #region Document conversion examples with common options

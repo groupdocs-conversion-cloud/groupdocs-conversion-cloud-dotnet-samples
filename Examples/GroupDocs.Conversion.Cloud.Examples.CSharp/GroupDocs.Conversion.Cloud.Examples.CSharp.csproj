@@ -55,8 +55,8 @@
     <StartupObject>GroupDocs.Conversion.Cloud.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GroupDocs.Conversion.Cloud.Sdk, Version=20.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\GroupDocs.Conversion-Cloud.20.3.0\lib\net20\GroupDocs.Conversion.Cloud.Sdk.dll</HintPath>
+    <Reference Include="GroupDocs.Conversion.Cloud.Sdk, Version=20.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GroupDocs.Conversion-Cloud.20.11.0\lib\net20\GroupDocs.Conversion.Cloud.Sdk.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -75,6 +75,7 @@
     <Compile Include="Common\ConvertSpecificPages .cs" />
     <Compile Include="Common\ConvertConsecutivePages.cs" />
     <Compile Include="Common\AddWatermark.cs" />
+    <Compile Include="Convert\ConvertToPdfDirect.cs" />
     <Compile Include="Convert\ConvertToPdfResponseBody.cs" />
     <Compile Include="Convert\ConvertToSpreadsheet.cs" />
     <Compile Include="Convert\ConvertToPresentation.cs" />
