@@ -24,20 +24,20 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
             //// ***********************************************************
 
             //TODO: Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required).
-            Constants.MyClientId = "XXXXXXXXXXXXXXXX";
+            Constants.MyClientId = "XXXX-XXXX-XXXX-XXXX";
             Constants.MyClientSecret = "XXXXXXXXXXXXXXXX";
             Constants.MyStorage = "First Storage";
 
             // Uploading sample test files from local disk to cloud storage
             Constants.UploadSampleTestFiles();
 
-            
+
             #region Info API Examples
             GetSupportedConversions.Run();
 
             GetDocumentInformation.Run();
             #endregion
-            
+
             #region Document conversion examples with conversion options
             ConvertToPdf.Run();
 
@@ -62,6 +62,8 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
             ConvertConsecutivePages.Run();
 
             ConvertSpecificPages.Run();
+
+            ConvertUsingCustomFont.Run();
             #endregion
 
             #region Document conversion examples with loading options
