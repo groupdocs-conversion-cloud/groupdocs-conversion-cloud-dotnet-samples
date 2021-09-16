@@ -15,7 +15,8 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
         public static Configuration GetConfig()
         {
             var config = new Configuration(MyClientId, MyClientSecret);
-            return config;
+			config.ApiBaseUrl = "https://api.groupdocs.cloud";
+			return config;
         }
 
         public static void UploadSampleTestFiles()
@@ -49,8 +50,9 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
 				if (response.Exists != null && !response.Exists.Value)
 				{
                     var fileStream = File.Open(file, FileMode.Open);
-
-					fileApi.UploadFile(new Sdk.Model.Requests.UploadFileRequest(relativeFilePath, fileStream, MyStorage));
+                    Console.WriteLine(file);
+                    var request = new Sdk.Model.Requests.UploadFileRequest(relativeFilePath, fileStream);
+					fileApi.UploadFile(request);
 					fileStream.Close();
 				}
 			}

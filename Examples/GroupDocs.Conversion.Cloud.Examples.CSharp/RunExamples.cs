@@ -26,7 +26,6 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
             //TODO: Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required).
             Constants.MyClientId = "XXXX-XXXX-XXXX-XXXX";
             Constants.MyClientSecret = "XXXXXXXXXXXXXXXX";
-            Constants.MyStorage = "First Storage";
 
             // Uploading sample test files from local disk to cloud storage
             Constants.UploadSampleTestFiles();

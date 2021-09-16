@@ -18,7 +18,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.Convert
                 var apiInstance = new ConvertApi(Constants.GetConfig());
 
                 // Prepare request
-                var fileStream = File.Open("..\\..\\..\\Resources\\WordProcessing\\four-pages.docx", FileMode.Open);
+                var fileStream = File.Open("..\\..\\..\\..\\Resources\\WordProcessing\\four-pages.docx", FileMode.Open);
                 var request = new ConvertDocumentDirectRequest("pdf", fileStream);
 
                 // Convert to specified format
