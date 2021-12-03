@@ -36,6 +36,11 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
 
             GetDocumentInformation.Run();
             #endregion
+            
+            #region License API Examples
+            GetLicenseConsumption.Run();
+
+            #endregion
 
             #region Document conversion examples with conversion options
             ConvertToPdf.Run();
