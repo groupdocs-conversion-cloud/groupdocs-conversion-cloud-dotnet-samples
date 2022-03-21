@@ -58,6 +58,8 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
             ConvertToSpreadsheet.Run();
 
             ConvertToPdfDirect.Run();
+
+            ConvertToPdfDirectOptions.Run();
             #endregion
 
             #region Document conversion examples with common options
