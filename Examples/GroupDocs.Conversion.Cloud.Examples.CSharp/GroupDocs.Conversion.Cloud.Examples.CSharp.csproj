@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GroupDocs.Conversion-Cloud" Version="23.9.0" />
+    <PackageReference Include="GroupDocs.Conversion-Cloud" Version="23.10.0" />
   </ItemGroup>
 
 </Project>
