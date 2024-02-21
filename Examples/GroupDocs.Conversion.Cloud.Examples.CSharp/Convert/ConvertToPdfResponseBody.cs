@@ -41,7 +41,8 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.Convert
                         UnembedFonts = true,
                         RemoveUnusedStreams = true,
                         RemoveUnusedObjects = true,
-                        RemovePdfaCompliance = false
+                        RemovePdfaCompliance = false,
+                        PageSize = PdfConvertOptions.PageSizeEnum.A4
                     },
                     OutputPath = null // set OutputPath as null will result the output as document IOStream
                 };
