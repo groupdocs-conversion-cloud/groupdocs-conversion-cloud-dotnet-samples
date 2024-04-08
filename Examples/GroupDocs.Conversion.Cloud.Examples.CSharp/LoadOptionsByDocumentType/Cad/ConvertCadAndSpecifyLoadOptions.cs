@@ -25,8 +25,8 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.C
                     Format = "pdf",
                     LoadOptions = new CadLoadOptions
                     {
-                        Width = 1920,
-                        Height = 1080
+                        Format = "dwg",
+                        BackgroundColor = "Gray"
                     },
                     OutputPath = "converted"
                 };
