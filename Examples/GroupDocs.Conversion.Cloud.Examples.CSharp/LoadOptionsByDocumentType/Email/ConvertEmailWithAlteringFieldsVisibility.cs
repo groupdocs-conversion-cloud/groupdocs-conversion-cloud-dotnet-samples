@@ -28,7 +28,6 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.E
                         DisplayHeader = false,
                         DisplayFromEmailAddress = false,
                         DisplayToEmailAddress = false,
-                        DisplayEmailAddress = false,
                         DisplayCcEmailAddress = false,
                         DisplayBccEmailAddress = false
                     },

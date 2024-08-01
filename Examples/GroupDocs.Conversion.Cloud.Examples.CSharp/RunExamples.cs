@@ -36,7 +36,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
 
             GetDocumentInformation.Run();
             #endregion
-            
+
             #region License API Examples
             GetLicenseConsumption.Run();
 
@@ -131,6 +131,14 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
 
             ConvertWordProcessingBySpecifyingFontSubstitution.Run();
 
+            #endregion
+
+            #region Async API Examples
+
+            ConvertToPdfAsync.Run();
+            
+            ConvertToPdfDirectAsync.Run();
+            
             #endregion
 
             Console.WriteLine("Completed!");
