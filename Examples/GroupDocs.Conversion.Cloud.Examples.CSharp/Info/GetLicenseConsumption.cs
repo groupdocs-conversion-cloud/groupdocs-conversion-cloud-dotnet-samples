@@ -16,9 +16,10 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.Info
 			{
 				var response = apiInstance.GetConsumptionCredit();
 
-                Console.WriteLine($"Credits: {response.Credit}");
-				Console.WriteLine($"Quantity: {response.Quantity}");
-			}
+                Console.WriteLine($"Credits (for self-hosted version): {response.Credit}");
+				Console.WriteLine($"Quantity (for self-hosted version): {response.Quantity}");
+                Console.WriteLine($"BilledApiCalls (for cloud version): {response.BilledApiCalls}");
+            }
 			catch (Exception e)
 			{
 				Console.WriteLine("Exception while calling LicenseApi: " + e.Message);
