@@ -20,7 +20,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.P
                 // Prepare convert settings
                 var loadOptions = new PresentationLoadOptions
                 {
-                    HideComments = true
+                    CommentsPosition = PresentationLoadOptions.CommentsPositionEnum.None
                 };
 
                 var settings = new ConvertSettings

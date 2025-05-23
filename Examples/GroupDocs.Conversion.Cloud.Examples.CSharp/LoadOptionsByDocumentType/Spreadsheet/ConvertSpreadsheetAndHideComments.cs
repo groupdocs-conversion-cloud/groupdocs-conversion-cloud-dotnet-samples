@@ -20,7 +20,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.S
                 // Prepare convert settings
                 var loadOptions = new SpreadsheetLoadOptions
                 {
-                    HideComments = true,
+                    PrintComments = SpreadsheetLoadOptions.PrintCommentsEnum.PrintNoComments,
                     OnePagePerSheet = true,
                 };
 
