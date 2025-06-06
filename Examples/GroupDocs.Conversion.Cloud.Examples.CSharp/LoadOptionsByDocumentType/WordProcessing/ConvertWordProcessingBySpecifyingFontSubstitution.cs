@@ -21,7 +21,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.W
                 // Prepare convert settings
                 var loadOptions = new WordProcessingLoadOptions
                 {
-                    AutoFontSubstitution = false,
+                    FontNameSubstitutionEnabled = true,
                     DefaultFont = "Helvetica",
                     FontSubstitutes = new Dictionary<string, string>
                     {
