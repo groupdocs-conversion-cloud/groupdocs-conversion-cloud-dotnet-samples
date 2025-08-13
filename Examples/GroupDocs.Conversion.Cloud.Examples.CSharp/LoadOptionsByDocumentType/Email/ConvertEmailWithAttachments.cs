@@ -25,7 +25,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.E
                     Format = "pdf",
                     LoadOptions = new EmailLoadOptions
                     {
-                        ConvertAttachments = true
+                        DisplayAttachments = true
                     },
                     OutputPath = "converted"
                 };
