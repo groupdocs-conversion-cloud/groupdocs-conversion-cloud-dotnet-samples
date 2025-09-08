@@ -23,7 +23,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.Convert
                     StorageName = Constants.MyStorage,
                     FilePath = "WordProcessing/four-pages.docx",
                     Format = "html",
-                    ConvertOptions = new HtmlConvertOptions
+                    ConvertOptions = new WebConvertOptions
                     {
                         FromPage = 1,
                         PagesCount = 1,

@@ -21,7 +21,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.Convert
 
                 // Prepare request
                 var fileStream = File.Open("..\\..\\..\\..\\Resources\\WordProcessing\\password-protected.docx", FileMode.Open);
-                var loadOptions = new DocxLoadOptions();
+                var loadOptions = new WordProcessingLoadOptions();
                 loadOptions.Format = "docx";
                 loadOptions.Password = "password";
                 var request = new ConvertDocumentDirectRequest("pdf", fileStream, null, null, loadOptions);

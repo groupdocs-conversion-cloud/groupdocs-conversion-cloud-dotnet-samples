@@ -10,7 +10,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp
 	{
 		public static string MyClientId;
 		public static string MyClientSecret;
-		public static string MyStorage;
+		public static string MyStorage  = null;
 
         public static Configuration GetConfig()
         {

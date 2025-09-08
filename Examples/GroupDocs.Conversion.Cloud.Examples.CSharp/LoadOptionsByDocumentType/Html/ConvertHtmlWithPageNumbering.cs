@@ -23,7 +23,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.H
                     StorageName = Constants.MyStorage,
                     FilePath = "Html/sample.html",
                     Format = "pdf",
-                    LoadOptions = new HtmlLoadOptions
+                    LoadOptions = new WebLoadOptions
                     {
                         PageNumbering = true
                     },

@@ -23,7 +23,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.Convert
                     StorageName = Constants.MyStorage,
                     FilePath = "WordProcessing/password-protected.docx",
                     Format = "pdf",
-                    LoadOptions = new DocxLoadOptions { Password = "password" },
+                    LoadOptions = new WordProcessingLoadOptions { Password = "password" },
                     ConvertOptions = new PdfConvertOptions
                     {
                         CenterWindow = true,
