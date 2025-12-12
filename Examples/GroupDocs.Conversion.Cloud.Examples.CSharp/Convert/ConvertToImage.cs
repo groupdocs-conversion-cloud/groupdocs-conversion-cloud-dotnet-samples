@@ -23,7 +23,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.Convert
                     StorageName = Constants.MyStorage,
                     FilePath = "WordProcessing/four-pages.docx",
                     Format = "jpg",
-                    ConvertOptions = new JpgConvertOptions
+                    ConvertOptions = new ImageConvertOptions
                     {
                         FromPage = 1,
                         PagesCount = 2,

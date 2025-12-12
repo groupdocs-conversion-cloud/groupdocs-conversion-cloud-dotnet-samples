@@ -24,7 +24,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.Convert
                     FilePath = "Pdf/sample.pdf",
                     Format = "docx",
                     LoadOptions = new PdfLoadOptions { Password = "", HidePdfAnnotations = true, RemoveEmbeddedFiles = false, FlattenAllFields = true },
-                    ConvertOptions = new DocxConvertOptions(),
+                    ConvertOptions = new WordProcessingConvertOptions(),
                     OutputPath = "converted"
                 };
 

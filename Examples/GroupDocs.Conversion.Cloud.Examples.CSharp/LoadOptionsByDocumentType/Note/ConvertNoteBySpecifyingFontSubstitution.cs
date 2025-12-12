@@ -19,7 +19,7 @@ namespace GroupDocs.Conversion.Cloud.Examples.CSharp.LoadOptionsByDocumentType.N
                 var apiInstance = new ConvertApi(Constants.GetConfig());
 
                 // Prepare convert settings
-                var loadOptions = new OneLoadOptions
+                var loadOptions = new NoteLoadOptions
                 {
                     FontSubstitutes = new Dictionary<string, string>
                     {
